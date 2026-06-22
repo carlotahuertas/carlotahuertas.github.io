@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carlota Huertas Ruesta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="en">
+
+<!-- Language toggle -->
+<div class="lang-toggle">
+  <button class="lang-btn active" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('es')">ES</button>
+</div>
+
+<!-- Nav -->
+<nav id="nav">
+  <a class="nav-logo" onclick="showPage('home')">Carlota Huertas</a>
+  <div class="nav-links">
+    <a onclick="showPage('about')" data-page="about"><span data-en>About</span><span data-es>Sobre mí</span></a>
+    <a onclick="showPage('projects')" data-page="projects"><span data-en>Projects</span><span data-es>Proyectos</span></a>
+    <a onclick="showPage('contact')" data-page="contact"><span data-en>Contact</span><span data-es>Contacto</span></a>
+  </div>
+</nav>
+
+<!-- ══ PAGE: HOME ══ -->
+<div class="page active" id="page-home">
+
+<!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-azulejo"></div>
+
+  <div class="hero-eyebrow">
+    <span data-en>Data Engineer & Analyst · Georgia Tech · Madrid</span>
+    <span data-es>Ingeniera de Datos & Analista · Georgia Tech · Madrid</span>
+  </div>
+
+  <h1 class="hero-name">
+    Car<em>lota</em><br>Huer<em>tas</em>
+  </h1>
+
+  <p class="hero-intro">
+    <span data-en>Industrial & Systems Engineer specialising in analytics infrastructure, data pipelines, and systems that turn complexity into clarity.</span>
+    <span data-es>Ingeniera Industrial y de Sistemas especializada en infraestructura analítica, pipelines de datos y sistemas que convierten la complejidad en claridad.</span>
+  </p>
+
+  <div class="hero-actions">
+    <a href="CarlotaHuertasCV26.pdf" download class="btn-primary">
+      <span data-en>Download CV</span><span data-es>Descargar CV</span> ↓
+    </a>
+    <a href="#contact" class="btn-ghost">
+      <span data-en>Get in touch</span><span data-es>Contactar</span> →
+    </a>
+  </div>
+</section>
+
+</div><!-- /page-home -->
+
+<!-- ══ PAGE: ABOUT ══ -->
+<div class="page" id="page-about">
+
+<!-- ══════════════════════════════════════════════
+     EXPERIENCE
+══════════════════════════════════════════════ -->
+<section id="experience" class="section-wrap">
+  <div class="section-label">
+    <span class="section-num">02</span>
+    <h2 class="section-title"><span data-en>Experience</span><span data-es>Experiencia</span></h2>
+  </div>
+
+  <div class="exp-list">
+
+    <!-- Santander — grouped -->
+    <div class="exp-item" data-co="santander" data-reveal>
+      <div class="exp-bg"></div>
+      <div class="exp-inner">
+        <div class="exp-meta">
+          <span class="exp-period" style="color:var(--cobalt)">May 2025 – <span data-en>Present</span><span data-es>Hoy</span></span>
+          <span class="exp-location">Miami</span>
+          <span class="exp-country">Florida, USA</span>
+          <span class="exp-industry">Banking · Cloud</span>
+        </div>
+        <div class="exp-content">
+          <div class="exp-company">Banco Santander</div>
+
+          <!-- Role 1 -->
+          <div class="exp-role-block">
+            <div class="exp-role">Data Engineer <span class="exp-role-period">· Nov 2025 – <span data-en>Present</span><span data-es>Hoy</span> · Remote</span></div>
+            <ul class="exp-bullets">
+              <li><span data-en>Architected Tableau Cloud migration infrastructure — secure data flows between cloud, Tableau Bridge, and enterprise databases</span><span data-es>Arquitecté la infraestructura de migración a Tableau Cloud — flujos de datos seguros entre la nube, Tableau Bridge y bases de datos empresariales</span></li>
+              <li><span data-en>Engineered identity and access controls using SSO, Microsoft Entra ID, and SailPoint for enterprise analytics platforms</span><span data-es>Implementé controles de identidad y acceso con SSO, Microsoft Entra ID y SailPoint para plataformas analíticas empresariales</span></li>
+              <li><span data-en>Configured IP allowlists, encrypted database connectivity, and cloud security across AWS and Salesforce environments</span><span data-es>Configuré listas de IP permitidas, conectividad cifrada y seguridad cloud en entornos AWS y Salesforce</span></li>
+              <li><span data-en>Analyzed SQL datasource dependencies to resolve migration issues and validate data integrity</span><span data-es>Analicé dependencias SQL de fuentes de datos para resolver problemas de migración y validar la integridad de los datos</span></li>
+            </ul>
+            <div class="exp-tags" style="margin-bottom:32px">
+              <span class="exp-tag">Tableau Cloud</span><span class="exp-tag">AWS</span><span class="exp-tag">Salesforce</span><span class="exp-tag">SSO / Entra ID</span><span class="exp-tag">SQL</span><span class="exp-tag">SailPoint</span>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="exp-role-block" style="border-top:1px solid var(--border);padding-top:28px;">
+            <div class="exp-role"><span data-en>Digital Strategy Intern</span><span data-es>Práctica en Estrategia Digital</span> <span class="exp-role-period">· May – Aug 2025 · Miami, FL</span></div>
+            <ul class="exp-bullets">
+              <li><span data-en>Integrated WhatsApp Business via APIs and webhooks — new client communication channel within the bank's ecosystem</span><span data-es>Integré WhatsApp Business vía APIs y webhooks — nuevo canal de comunicación con clientes dentro del ecosistema bancario</span></li>
+              <li><span data-en>Led integration of Adobe Experience Platform to automate CRM workflows using real-time triggers and unified data architecture</span><span data-es>Lideré la integración de Adobe Experience Platform para automatizar flujos CRM con triggers en tiempo real y arquitectura de datos unificada</span></li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">Adobe AEP</span><span class="exp-tag">API Integration</span><span class="exp-tag">CRM</span><span class="exp-tag">WhatsApp Business</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Amazon -->
+    <div class="exp-item" data-co="amazon" data-reveal>
+      <div class="exp-bg"></div>
+      <div class="exp-inner">
+        <div class="exp-meta">
+          <span class="exp-period" style="color:var(--saffron)">Jan – Jun 2024</span>
+          <span class="exp-location">Boston</span>
+          <span class="exp-country">Massachusetts, USA</span>
+          <span class="exp-industry">Robotics · Analytics</span>
+        </div>
+        <div class="exp-content">
+          <div class="exp-company">Amazon Robotics</div>
+          <div class="exp-role"><span data-en>Global Robotics Data Analyst Co-op</span><span data-es>Co-op: Analista de Datos Robótica Global</span></div>
+          <ul class="exp-bullets">
+            <li><span data-en>Delivered a 3-year forecasting model and Tableau reporting solution adopted by Global Robotics Operations for strategic planning</span><span data-es>Desarrollé un modelo de previsión a 3 años y solución de reporting en Tableau adoptado por Operaciones Globales de Robótica para planificación estratégica</span></li>
+            <li><span data-en>Built SQL-based ETL pipelines to centralize supply chain KPIs, improving reporting automation and data accessibility</span><span data-es>Construí pipelines ETL en SQL para centralizar KPIs de cadena de suministro, mejorando la automatización de reporting y accesibilidad de datos</span></li>
+            <li><span data-en>Completed advanced training through the Amazon Robotics Academy in analytics and data visualization</span><span data-es>Completé formación avanzada en la Amazon Robotics Academy en analítica y visualización de datos</span></li>
+          </ul>
+          <div class="exp-tags">
+            <span class="exp-tag">Tableau</span><span class="exp-tag">SQL ETL</span><span class="exp-tag">Supply Chain</span><span class="exp-tag">Forecasting</span><span class="exp-tag">KPI Frameworks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kaizen -->
+    <div class="exp-item" data-co="kaizen" data-reveal>
+      <div class="exp-bg"></div>
+      <div class="exp-inner">
+        <div class="exp-meta">
+          <span class="exp-period" style="color:var(--terra)">Jun – Aug 2023</span>
+          <span class="exp-location">Porto</span>
+          <span class="exp-country">Portugal</span>
+          <span class="exp-industry">Consulting · Manufacturing</span>
+        </div>
+        <div class="exp-content">
+          <div class="exp-company">Kaizen Institute</div>
+          <div class="exp-role"><span data-en>Consulting Intern</span><span data-es>Práctica en Consultoría</span></div>
+          <ul class="exp-bullets">
+            <li><span data-en>Built a macro-enabled Excel tool and Power BI dashboard to streamline operations across 7 departments — reduced lead times by 15% and delays by 233%</span><span data-es>Desarrollé una herramienta Excel con macros y un dashboard en Power BI para optimizar operaciones en 7 departamentos — reducción del 15% en tiempos de entrega y del 233% en retrasos</span></li>
+            <li><span data-en>Analyzed historical process data to identify manufacturing bottlenecks and deliver data-driven recommendations to cross-functional stakeholders</span><span data-es>Analicé datos históricos de procesos para identificar cuellos de botella en manufactura y presentar recomendaciones basadas en datos a equipos multifuncionales</span></li>
+          </ul>
+          <div class="exp-tags">
+            <span class="exp-tag">Power BI</span><span class="exp-tag">Excel VBA</span><span class="exp-tag">Process Analysis</span><span class="exp-tag">Manufacturing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Veolia -->
+    <div class="exp-item" data-co="veolia" data-reveal>
+      <div class="exp-bg"></div>
+      <div class="exp-inner">
+        <div class="exp-meta">
+          <span class="exp-period" style="color:var(--sage)">Jun – Aug 2022</span>
+          <span class="exp-location">Paris</span>
+          <span class="exp-country">France</span>
+          <span class="exp-industry">Energy · Water · R&D</span>
+        </div>
+        <div class="exp-content">
+          <div class="exp-company">Veolia</div>
+          <div class="exp-role"><span data-en>Research & Development Intern</span><span data-es>Práctica en Investigación y Desarrollo</span></div>
+          <ul class="exp-bullets">
+            <li><span data-en>Developed a strategic roadmap for Digital Twin adoption in water infrastructure — evaluating technical feasibility, customer targeting, and business impact</span><span data-es>Desarrollé una hoja de ruta estratégica para la adopción de Digital Twins en infraestructura hídrica — evaluando viabilidad técnica, segmentación de clientes e impacto de negocio</span></li>
+            <li><span data-en>Built a Python database to track LATAM R&D partnerships and research initiatives, enabling data-driven funding decisions</span><span data-es>Construí una base de datos en Python para rastrear alianzas de I+D en LATAM e iniciativas de investigación, facilitando decisiones de financiación basadas en datos</span></li>
+          </ul>
+          <div class="exp-tags">
+            <span class="exp-tag">Python</span><span class="exp-tag">Digital Twins</span><span class="exp-tag">R&D Strategy</span><span class="exp-tag">Data Modeling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     EDUCATION
+══════════════════════════════════════════════ -->
+<section id="education" class="section-wrap">
+  <div class="section-label">
+    <span class="section-num">01</span>
+    <h2 class="section-title"><span data-en>Education</span><span data-es>Formación</span></h2>
+  </div>
+
+  <div class="edu-grid">
+
+    <!-- ── Georgia Tech — Featured ── -->
+    <div class="edu-featured" data-reveal>
+      <div class="edu-meta">
+        <span class="edu-year">2021 – 2025</span>
+        <span class="edu-location">Atlanta, GA</span>
+      </div>
+      <div class="edu-content">
+        <div class="edu-school edu-school--featured">Georgia Institute of Technology</div>
+        <div class="edu-degree-primary">
+          <span data-en>B.S. Industrial &amp; Systems Engineering</span>
+          <span data-es>Grado en Ingeniería Industrial y de Sistemas</span>
+        </div>
+        <div class="edu-degree-lines">
+          <div class="edu-degree-line">
+            <span class="edu-line-label"><span data-en>Concentration</span><span data-es>Concentración</span></span>
+            <span class="edu-degree-line-text"><span data-en>Analytics &amp; Data Science</span><span data-es>Analítica y Ciencia de Datos</span></span>
+          </div>
+          <div class="edu-degree-line">
+            <span class="edu-line-label">Minor</span>
+            <span class="edu-degree-line-text"><span data-en>Physics</span><span data-es>Física</span></span>
+          </div>
+        </div>
+        <div class="edu-ach-list">
+          <div class="edu-ach-row"><span class="edu-ach-star">✦</span><span data-en>Dean's List &amp; Faculty Honors</span><span data-es>Dean's List y Honores de Facultad</span></div>
+          <div class="edu-ach-row"><span class="edu-ach-star">✦</span><span data-en>Matson Supply Chain Scholar</span><span data-es>Becaria Matson Supply Chain</span></div>
+          <div class="edu-ach-row"><span class="edu-ach-star">✦</span><span data-en>Tower Award Gold Sustained</span><span data-es>Tower Award Gold Sustained</span></div>
+          <div class="edu-ach-row"><span class="edu-ach-star">✦</span><span data-en>Physics Teaching Assistant &amp; PLUS Leader </span><span data-es>Asistente de Física y PLUS Leader · 350+ estudiantes</span></div>
+        </div>
+        <div class="edu-tags">
+          <span class="edu-tag cobalt">ALPFA · <span data-en>Corporate Relations Chair</span><span data-es>Presidenta de Relaciones Corporativas</span></span>
+          <span class="edu-tag cobalt">SHPE</span>
+        </div>
+        <button class="view-diploma-btn" onclick="openDiploma('gt')">
+          <span data-en>View Diploma</span><span data-es>Ver Diploma</span> ↗
+        </button>
+      </div>
+      <div class="edu-tower-col" aria-hidden="true"></div>
+    </div>
+
+    <!-- ── Secondary row: CEU + Dual Diploma ── -->
+    <div class="edu-secondary-grid">
+
+      <!-- CEU San Pablo -->
+      <div class="edu-secondary-card" data-reveal>
+        <div class="edu-sec-meta">
+          <span class="edu-year">2017 – 2021</span>
+          <span class="edu-location">Madrid, España</span>
+        </div>
+        <div class="edu-school edu-school--secondary">CEU San Pablo Montepríncipe</div>
+        <div class="edu-sec-degree">
+          <span data-en>Bachillerato Español en Ciencias</span>
+          <span data-es>Bachillerato Español en Ciencias</span>
+        </div>
+        <div class="edu-sec-stats">
+          <div class="edu-stat-block">
+            <div class="edu-stat-num">Top 5</div>
+            <div class="edu-stat-label"><span data-en>EVAU Madrid</span><span data-es>EVAU Madrid</span></div>
+          </div>
+          <div class="edu-stat-block">
+            <div class="edu-stat-num">13.95</div>
+            <div class="edu-stat-label">/ 14.0</div>
+          </div>
+        </div>
+        <div class="edu-sec-note">
+          <span data-en>Madrid Community Honorific Distinction</span>
+          <span data-es>Distinción Honorífica Comunidad de Madrid</span>
+        </div>
+        <div>
+          <span class="edu-award">✦ Premio Ángel Herrera Oria · <span data-en>Best Alumni</span><span data-es>Mejor Alumna</span></span>
+        </div>
+        <button class="view-diploma-btn view-diploma-terra" onclick="openDiploma('ceu')">
+          <span data-en>View Diploma</span><span data-es>Ver Diploma</span> ↗
+        </button>
+      </div>
+
+      <!-- Dual Diploma -->
+      <div class="edu-secondary-card edu-secondary-card--right" data-reveal>
+        <div class="edu-sec-meta">
+          <span class="edu-year">2021</span>
+          <span class="edu-location">Madrid, España</span>
+        </div>
+        <div class="edu-school edu-school--secondary">
+          <span data-en>Academica Dual Diploma</span>
+          <span data-es>Diploma Dual Academica</span>
+        </div>
+        <div class="edu-sec-degree">
+          <span data-en>U.S. High School Diploma</span>
+          <span data-es>Diploma de Bachillerato Americano</span>
+        </div>
+        <div class="edu-sec-note" style="margin-top:20px">
+          <span data-en>Graduated with dual accreditation — Spain &amp; United States</span>
+          <span data-es>Graduada con doble acreditación — España y Estados Unidos</span>
+        </div>
+        <button class="view-diploma-btn view-diploma-saffron" onclick="openDiploma('dual')">
+          <span data-en>View Diploma</span><span data-es>Ver Diploma</span> ↗
+        </button>
+      </div>
+
+    </div><!-- /edu-secondary-grid -->
+
+    <!-- ── Achievement summary cards ── -->
+    <div class="edu-achievement-cards">
+      <div class="edu-ach-card edu-ach-card--navy" data-reveal>
+        <div class="edu-ach-card-name">Georgia Tech</div>
+        <div class="edu-ach-card-sub">ISyE + Physics</div>
+        <div class="edu-ach-card-badge"><span data-en>Highest Honors</span><span data-es>Máximos Honores</span></div>
+      </div>
+      <div class="edu-ach-card edu-ach-card--burgundy" data-reveal>
+        <div class="edu-ach-card-name"><span data-en>EVAU Top 5</span><span data-es>EVAU Top 5</span></div>
+        <div class="edu-ach-card-sub">13.95 / 14</div>
+        <div class="edu-ach-card-badge"><span data-en>Madrid Region</span><span data-es>Comunidad de Madrid</span></div>
+      </div>
+      <div class="edu-ach-card edu-ach-card--gold" data-reveal>
+        <div class="edu-ach-card-name"><span data-en>Dual Diploma</span><span data-es>Diploma Dual</span></div>
+        <div class="edu-ach-card-sub"><span data-en>Spain + U.S.</span><span data-es>España + EE.UU.</span></div>
+        <div class="edu-ach-card-badge"><span data-en>Dual Accreditation</span><span data-es>Doble Acreditación</span></div>
+      </div>
+    </div><!-- /edu-achievement-cards -->
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     VOLUNTEER
+══════════════════════════════════════════════ -->
+<section id="volunteer" class="section-wrap">
+  <div class="section-label">
+    <span class="section-num">05</span>
+    <h2 class="section-title"><span data-en>Beyond the work</span><span data-es>Más allá del trabajo</span></h2>
+  </div>
+
+  <div class="volunteer-inner">
+    <div class="volunteer-text">
+      <div class="volunteer-title">Karanai, Gambia</div>
+      <p class="volunteer-body">
+        <span data-en>Spent a summer teaching Math and English in an underserved rural community in Karanai. Beyond the classroom, I helped support the construction of a nursing home and worked on cross-cultural programs connecting the community's youngest members with resources and opportunities they wouldn't otherwise have.</span>
+        <span data-es>Pasé un verano enseñando Matemáticas e Inglés en una comunidad rural desfavorecida en Karanai. Más allá del aula, participé en la construcción de una residencia de mayores y en programas interculturales que conectaban a los más jóvenes de la comunidad con recursos y oportunidades a las que de otro modo no tendrían acceso.</span>
+      </p>
+      <div class="volunteer-detail">
+        <span data-en>Teaching Volunteer · Karanai, Gambia 🇬🇲</span>
+        <span data-es>Voluntaria Docente · Karanai, Gambia 🇬🇲</span>
+      </div>
+    </div>
+
+    <!-- Azulejo tile grid — decorative -->
+    <div class="volunteer-tile">
+      <div class="vt c1"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="13" stroke="#1B3A6B" stroke-width="1.2"/><circle cx="20" cy="20" r="6" stroke="#1B3A6B" stroke-width="1"/><line x1="7" y1="20" x2="33" y2="20" stroke="#1B3A6B" stroke-width=".8"/><line x1="20" y1="7" x2="20" y2="33" stroke="#1B3A6B" stroke-width=".8"/></svg></div>
+      <div class="vt c2"><svg viewBox="0 0 40 40" fill="none"><rect x="8" y="8" width="24" height="24" stroke="#B85C38" stroke-width="1.2" transform="rotate(45 20 20)"/><circle cx="20" cy="20" r="4" fill="#B85C38" opacity=".4"/></svg></div>
+      <div class="vt c3"><svg viewBox="0 0 40 40" fill="none"><polygon points="20,7 33,14 33,26 20,33 7,26 7,14" stroke="#C8860A" stroke-width="1.2"/><circle cx="20" cy="20" r="5" fill="#C8860A" opacity=".3"/></svg></div>
+      <div class="vt c4"><svg viewBox="0 0 40 40" fill="none"><rect x="8" y="8" width="24" height="24" stroke="#4A6741" stroke-width="1.2"/><rect x="14" y="14" width="12" height="12" stroke="#4A6741" stroke-width="1"/><circle cx="20" cy="20" r="3" fill="#4A6741" opacity=".4"/></svg></div>
+      <div class="vt c2"><svg viewBox="0 0 40 40" fill="none"><path d="M20 7L33 20L20 33L7 20Z" stroke="#B85C38" stroke-width="1.2"/><circle cx="20" cy="20" r="5" stroke="#B85C38" stroke-width="1"/></svg></div>
+      <div class="vt c1"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="13" stroke="#1B3A6B" stroke-width="1"/><path d="M7 20Q13 13 20 20Q27 27 33 20" stroke="#1B3A6B" stroke-width="1" fill="none"/></svg></div>
+      <div class="vt c5"><svg viewBox="0 0 40 40" fill="none"><rect x="10" y="10" width="20" height="20" stroke="#6B5744" stroke-width="1"/><line x1="10" y1="20" x2="30" y2="20" stroke="#6B5744" stroke-width=".8"/><line x1="20" y1="10" x2="20" y2="30" stroke="#6B5744" stroke-width=".8"/></svg></div>
+      <div class="vt c3"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="10" stroke="#C8860A" stroke-width="1.5"/><line x1="10" y1="10" x2="30" y2="30" stroke="#C8860A" stroke-width=".8"/><line x1="30" y1="10" x2="10" y2="30" stroke="#C8860A" stroke-width=".8"/></svg></div>
+      <div class="vt c4"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="13" stroke="#4A6741" stroke-width="1"/><polygon points="20,9 23,17 32,17 25,22 28,31 20,26 12,31 15,22 8,17 17,17" stroke="#4A6741" stroke-width=".8" fill="#4A6741" fill-opacity=".15"/></svg></div>
+      <div class="vt c1"><svg viewBox="0 0 40 40" fill="none"><rect x="8" y="8" width="24" height="24" stroke="#1B3A6B" stroke-width="1.2"/><circle cx="8" cy="8" r="2.5" fill="#1B3A6B" opacity=".5"/><circle cx="32" cy="8" r="2.5" fill="#1B3A6B" opacity=".5"/><circle cx="8" cy="32" r="2.5" fill="#1B3A6B" opacity=".5"/><circle cx="32" cy="32" r="2.5" fill="#1B3A6B" opacity=".5"/><circle cx="20" cy="20" r="5" stroke="#1B3A6B" stroke-width="1"/></svg></div>
+      <div class="vt c2"><svg viewBox="0 0 40 40" fill="none"><path d="M7 7Q20 2 33 7Q38 20 33 33Q20 38 7 33Q2 20 7 7Z" stroke="#B85C38" stroke-width="1.2"/><circle cx="20" cy="20" r="5" fill="#B85C38" opacity=".3"/></svg></div>
+      <div class="vt c5"><svg viewBox="0 0 40 40" fill="none"><polygon points="20,6 34,14 34,26 20,34 6,26 6,14" stroke="#6B5744" stroke-width="1.2"/><polygon points="20,12 28,17 28,23 20,28 12,23 12,17" stroke="#6B5744" stroke-width=".8"/></svg></div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /page-about -->
+
+<!-- ══ PAGE: PROJECTS ══ -->
+<div class="page" id="page-projects">
+
+<!-- ══════════════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════════════ -->
+<section id="projects" class="section-wrap" style="padding-bottom:80px">
+  <div class="section-label">
+    <span class="section-num">03</span>
+    <h2 class="section-title"><span data-en>Projects</span><span data-es>Proyectos</span></h2>
+  </div>
+
+  <p class="projects-intro">
+    <span data-en>Selected work in data engineering, machine learning, and systems design.</span>
+    <span data-es>Trabajo seleccionado en ingeniería de datos, machine learning y diseño de sistemas.</span>
+  </p>
+
+  <div class="projects-grid" style="padding-top:24px">
+
+    <!-- InMaps — featured -->
+    <div class="project-card featured" onclick="openOverlay('inmaps')" data-reveal style="min-height:400px">
+      <div>
+        <div class="project-num">01 — <span data-en>Featured</span><span data-es>Destacado</span></div>
+        <div class="project-name" style="font-size:40px">InMaps</div>
+        <div class="project-role"><span data-en>Co-founder & Full-Stack Developer</span><span data-es>Co-fundadora & Desarrolladora Full-Stack</span></div>
+        <p class="project-desc"><span data-en>Indoor navigation system for booth-based events. BLE beacons, sensor fusion, A* pathfinding — built from hardware to app to pricing engine.</span><span data-es>Sistema de navegación interior para eventos con stands. Beacons BLE, fusión de sensores, algoritmo A* — construido desde el hardware hasta la app y el motor de precios.</span></p>
+        <div class="project-stack">
+          <span class="project-tag accent">Flutter</span>
+          <span class="project-tag accent">BLE Beacons</span>
+          <span class="project-tag accent">Python / Flask</span>
+          <span class="project-tag">A* Search</span>
+          <span class="project-tag">IMU Fusion</span>
+          <span class="project-tag">Render</span>
+        </div>
+        <div class="project-links" style="margin-top:20px">
+          <a href="#" class="project-link" onclick="event.stopPropagation()">GitHub ↗</a>
+          <a href="#" class="project-link" onclick="event.stopPropagation()"><span data-en>Visit Website</span><span data-es>Ver Web</span> ↗</a>
+        </div>
+      </div>
+      <div class="project-visual-panel">
+        <div class="pv-label">InMaps · <span data-en>Live results</span><span data-es>Resultados reales</span></div>
+        <div class="pv-stats">
+          <div class="pv-stat">
+            <div class="pv-stat-num">0.41m</div>
+            <div class="pv-stat-label"><span data-en>Positioning accuracy</span><span data-es>Precisión de posicionamiento</span></div>
+          </div>
+          <div class="pv-stat">
+            <div class="pv-stat-num">75%</div>
+            <div class="pv-stat-label"><span data-en>Faster booth-finding</span><span data-es>Más rápido localizar stands</span></div>
+          </div>
+          <div class="pv-stat">
+            <div class="pv-stat-num">4.6/5</div>
+            <div class="pv-stat-label"><span data-en>Usability rating</span><span data-es>Valoración de usabilidad</span></div>
+          </div>
+          <div class="pv-stat">
+            <div class="pv-stat-num">45+</div>
+            <div class="pv-stat-label"><span data-en>Interviews conducted</span><span data-es>Entrevistas realizadas</span></div>
+          </div>
+        </div>
+        <div class="pv-bg">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="40" stroke="#1B3A6B" stroke-width="1.5"/>
+            <circle cx="50" cy="50" r="20" stroke="#1B3A6B" stroke-width="1"/>
+            <line x1="10" y1="50" x2="90" y2="50" stroke="#1B3A6B" stroke-width=".8"/>
+            <line x1="50" y1="10" x2="50" y2="90" stroke="#1B3A6B" stroke-width=".8"/>
+          </svg>
+        </div>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+
+    <!-- Heart Disease ML -->
+    <div class="project-card" onclick="openOverlay('heartml')" data-reveal>
+      <div class="project-num">02</div>
+      <div class="project-name" style="font-size:28px"><span data-en>Heart Disease ML</span><span data-es>ML Enfermedades Cardíacas</span></div>
+      <div class="project-role"><span data-en>Developer · Data Scientist</span><span data-es>Desarrolladora · Científica de Datos</span></div>
+      <p class="project-desc"><span data-en>Machine learning pipeline for early detection and subtype classification of heart disease. Logistic regression, SVM, K-Means across 918 patient records.</span><span data-es>Pipeline de machine learning para detección temprana y clasificación de subtipos de enfermedades cardíacas. Regresión logística, SVM, K-Means sobre 918 registros de pacientes.</span></p>
+      <div class="project-stack">
+        <span class="project-tag accent">Python</span>
+        <span class="project-tag accent">scikit-learn</span>
+        <span class="project-tag">PCA</span>
+        <span class="project-tag">SVM</span>
+        <span class="project-tag">K-Means</span>
+      </div>
+      <div class="project-links" style="margin-top:20px">
+        <a href="#" class="project-link" onclick="event.stopPropagation()">GitHub ↗</a>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+
+    <!-- World Cup -->
+    <div class="project-card" onclick="openOverlay('worldcup')" data-reveal>
+      <div class="project-num">03</div>
+      <div class="project-name" style="font-size:28px"><span data-en>World Cup Prediction</span><span data-es>Predicción Mundial 2022</span></div>
+      <div class="project-role"><span data-en>Developer · Data Analyst</span><span data-es>Desarrolladora · Analista de Datos</span></div>
+      <p class="project-desc"><span data-en>Data-driven tournament simulator using FIFA player statistics. Position-weighted scoring, 19,000+ records cleaned. Correctly forecast France to the final.</span><span data-es>Simulador de torneo basado en datos usando estadísticas de jugadores FIFA. Puntuación ponderada por posición, 19.000+ registros procesados. Predijo correctamente a Francia en la final.</span></p>
+      <div class="project-stack">
+        <span class="project-tag accent">Python</span>
+        <span class="project-tag">Pandas</span>
+        <span class="project-tag">BeautifulSoup</span>
+        <span class="project-tag">Matplotlib</span>
+        <span class="project-tag">Seaborn</span>
+      </div>
+      <div class="project-links" style="margin-top:20px">
+        <a href="#" class="project-link" onclick="event.stopPropagation()">GitHub ↗</a>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+
+    <!-- World News Bias Analyzer -->
+    <div class="project-card" onclick="openOverlay('newsbias')" data-reveal>
+      <div class="project-num">04</div>
+      <div class="project-name" style="font-size:28px"><span data-en>World News Bias Analyzer</span><span data-es>Analizador de Sesgo en Noticias Globales</span></div>
+      <div class="project-role">Developer · Data Engineer · ML Engineer</div>
+      <p class="project-desc"><span data-en>Live intelligence dashboard tracking how the same world events are framed across 12 countries. Fetches real articles via API, matches cross-country coverage using sentence embeddings and cosine similarity, scores political bias with a logistic regression classifier trained on AllSides data, and visualizes framing divergence on an interactive world map.</span><span data-es>Dashboard de inteligencia en tiempo real que analiza cómo los mismos eventos se enmarcan en 12 países. Captura artículos reales vía API, empareja cobertura entre países con embeddings de frases y similitud coseno, puntúa el sesgo político con un clasificador entrenado en datos AllSides y visualiza divergencias en un mapa mundial interactivo.</span></p>
+      <div class="project-stack">
+        <span class="project-tag accent">Python</span>
+        <span class="project-tag accent">sentence-transformers</span>
+        <span class="project-tag accent">scikit-learn</span>
+        <span class="project-tag">NewsData.io API</span>
+        <span class="project-tag">SQLite</span>
+        <span class="project-tag">TextBlob</span>
+        <span class="project-tag">spaCy</span>
+        <span class="project-tag">Plotly Dash</span>
+      </div>
+      <div class="project-links" style="margin-top:20px">
+        <a class="project-link" onclick="event.stopPropagation(); openOverlay('newsbias')"><span data-en>View Case Study</span><span data-es>Ver Caso de Estudio</span> →</a>
+      </div>
+      <span class="project-arrow">↗</span>
+    </div>
+
+  </div>
+</section>
+
+</div><!-- /page-projects -->
+
+<!-- ══ PAGE: CONTACT ══ -->
+<div class="page" id="page-contact">
+
+<!-- ══════════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-heading">
+      <span data-en><em>Let's</em><br>work<br>together.</span>
+      <span data-es><em>Trabajemos</em><br>juntos.</span>
+    </div>
+    <div>
+      <div class="contact-links">
+        <a href="mailto:carlota.huertas@gmail.com" class="contact-link">
+          carlota.huertas@gmail.com
+          <span class="contact-link-arrow">↗</span>
+        </a>
+        <a href="tel:+14703135163" class="contact-link">
+          +1 (470) 313-5163
+          <span class="contact-link-arrow">↗</span>
+        </a>
+        <a href="https://linkedin.com/in/carlotahuertas" target="_blank" class="contact-link">
+          LinkedIn
+          <span class="contact-link-arrow">↗</span>
+        </a>
+        <a href="CarlotaHuertasCV26.pdf" download class="contact-link">
+          <span data-en>Download CV</span><span data-es>Descargar CV</span>
+          <span class="contact-link-arrow">↓</span>
+        </a>
+      </div>
+      <div class="contact-note">
+        <span data-en>Based in <span>Madrid, Spain</span> · Open to global roles<br>Available from <span>June 2026</span></span>
+        <span data-es>Basada en <span>Madrid, España</span> · Abierta a roles globales<br>Disponible desde <span>junio 2026</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-copy">© 2026 Carlota Huertas Ruesta</span>
+  <span class="footer-copy" style="font-style:italic;font-family:var(--font-serif)">Madrid · Atlanta · Boston · Porto · Paris · Miami</span>
+</footer>
+
+</div><!-- /page-contact -->
+
+<!-- ══════════════════════════════════════════════
+     PROJECT OVERLAYS
+══════════════════════════════════════════════ -->
+
+<!-- InMaps -->
+<div class="overlay" id="overlay-inmaps">
+  <div class="overlay-nav">
+    <button class="overlay-back" onclick="closeOverlay('inmaps')">← <span data-en>Back</span><span data-es>Volver</span></button>
+    <span style="font-family:var(--font-mono);font-size:10px;color:var(--muted);letter-spacing:.1em">01 / 04</span>
+  </div>
+  <div class="overlay-body">
+    <div class="overlay-eyebrow"><span data-en>Indoor Positioning · Event Tech · Jan–May 2025</span><span data-es>Posicionamiento Interior · Tecnología para Eventos · Ene–May 2025</span></div>
+    <div class="overlay-title">InMaps</div>
+    <p class="overlay-desc"><span data-en>An indoor navigation system built from scratch — hardware, app, backend, and pricing algorithm — for booth-based events.</span><span data-es>Un sistema de navegación interior construido desde cero — hardware, app, backend y algoritmo de precios — para eventos con stands.</span></p>
+    <div class="overlay-meta">
+      <div class="overlay-meta-item"><div class="overlay-meta-label"><span data-en>Role</span><span data-es>Rol</span></div><div class="overlay-meta-val"><span data-en>Co-founder & Full-Stack Developer</span><span data-es>Co-fundadora & Desarrolladora Full-Stack</span></div></div>
+      <div class="overlay-meta-item"><div class="overlay-meta-label"><span data-en>Industry</span><span data-es>Sector</span></div><div class="overlay-meta-val">Indoor Positioning · Event Tech</div></div>
+      <div class="overlay-meta-item"><div class="overlay-meta-label">Stack</div><div class="overlay-meta-val">Flutter · BLE · Flask · Python</div></div>
+    </div>
+    <div class="overlay-stats">
+      <div class="overlay-stat"><div class="overlay-stat-num">0.41m</div><div class="overlay-stat-label"><span data-en>Positioning accuracy</span><span data-es>Precisión de posicionamiento</span></div></div>
+      <div class="overlay-stat"><div class="overlay-stat-num">75%</div><div class="overlay-stat-label"><span data-en>Faster booth-finding</span><span data-es>Más rápido localizar stands</span></div></div>
+      <div class="overlay-stat"><div class="overlay-stat-num">4.6/5</div><div class="overlay-stat-label"><span data-en>Usability rating</span><span data-es>Valoración de usabilidad</span></div></div>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title"><span data-en>The challenge</span><span data-es>El reto</span></div>
+      <ul class="overlay-list">
+        <li><span data-en>Static maps and QR codes fail at large, dynamic events. We needed real positioning — not approximations.</span><span data-es>Los mapas estáticos y códigos QR no funcionan en eventos grandes y dinámicos. Necesitábamos posicionamiento real, no aproximaciones.</span></li>
+        <li><span data-en>Attendees needed a reason to explore — we gamified the experience with a Booth-Hunter game mode.</span><span data-es>Los asistentes necesitaban un motivo para explorar — añadimos un modo de juego Booth-Hunter para gamificar la experiencia.</span></li>
+        <li><span data-en>Designed a tiered pricing algorithm aligning costs with venue size and POI count for scalable B2B deployment.</span><span data-es>Diseñé un algoritmo de precios escalonado que alinea costes con el tamaño del venue y el número de POIs para despliegue B2B escalable.</span></li>
+      </ul>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title"><span data-en>How we built it</span><span data-es>Cómo lo construimos</span></div>
+      <ul class="overlay-list">
+        <li><span data-en>BLE trilateration combining beacon RSSI values with IMU dead reckoning — 0.41m live accuracy across 3 venues</span><span data-es>Trilateración BLE combinando valores RSSI de beacons con dead reckoning IMU — 0.41m de precisión real en 3 venues</span></li>
+        <li><span data-en>A* search algorithm for real-time pathfinding with dynamic recalculation as users move</span><span data-es>Algoritmo A* de búsqueda de caminos en tiempo real con recálculo dinámico según se mueve el usuario</span></li>
+        <li><span data-en>Flutter cross-platform mobile app — deployed to TestFlight for iOS beta testing</span><span data-es>App móvil multiplataforma en Flutter — desplegada en TestFlight para beta en iOS</span></li>
+        <li><span data-en>Flask backend on Render — API endpoints for dynamic content, pathfinding requests, and analytics</span><span data-es>Backend Flask en Render — endpoints API para contenido dinámico, solicitudes de rutas y analítica</span></li>
+        <li><span data-en>45+ customer discovery interviews with event organizers, developers, and venue managers</span><span data-es>45+ entrevistas de descubrimiento con organizadores de eventos, desarrolladores y gestores de venues</span></li>
+      </ul>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title">Stack</div>
+      <div class="overlay-tech">
+        <span class="accent">Flutter / Dart</span><span class="accent">BLE Beacons</span><span class="accent">Python / Flask</span>
+        <span>IMU Sensor Fusion</span><span>A* Algorithm</span><span>Render</span><span>TestFlight</span>
+      </div>
+    </div>
+    <a href="#" class="overlay-link-btn"><span data-en>View on GitHub</span><span data-es>Ver en GitHub</span> ↗</a>
+    <a href="#" class="overlay-link-btn ghost"><span data-en>Visit Website</span><span data-es>Ver Web</span> ↗</a>
+  </div>
+</div>
+
+<!-- Heart Disease -->
+<div class="overlay" id="overlay-heartml">
+  <div class="overlay-nav">
+    <button class="overlay-back" onclick="closeOverlay('heartml')">← <span data-en>Back</span><span data-es>Volver</span></button>
+    <span style="font-family:var(--font-mono);font-size:10px;color:var(--muted);letter-spacing:.1em">02 / 04</span>
+  </div>
+  <div class="overlay-body">
+    <div class="overlay-eyebrow">AI for Healthcare · Aug–Dec 2024</div>
+    <div class="overlay-title"><span data-en>Heart Disease ML</span><span data-es>ML Enfermedades Cardíacas</span></div>
+    <p class="overlay-desc"><span data-en>A machine learning pipeline for early detection and subtype classification of heart disease — turning clinical data into actionable diagnostic insight.</span><span data-es>Un pipeline de machine learning para detección temprana y clasificación de subtipos de enfermedades cardíacas — convirtiendo datos clínicos en insights diagnósticos accionables.</span></p>
+    <div class="overlay-meta">
+      <div class="overlay-meta-item"><div class="overlay-meta-label"><span data-en>Role</span><span data-es>Rol</span></div><div class="overlay-meta-val"><span data-en>Developer & Data Scientist</span><span data-es>Desarrolladora & Científica de Datos</span></div></div>
+      <div class="overlay-meta-item"><div class="overlay-meta-label"><span data-en>Data</span><span data-es>Datos</span></div><div class="overlay-meta-val">Kaggle · 918 patients · 11 features</div></div>
+    </div>
+    <div class="overlay-stats">
+      <div class="overlay-stat"><div class="overlay-stat-num">88%</div><div class="overlay-stat-label"><span data-en>Classification accuracy</span><span data-es>Precisión de clasificación</span></div></div>
+      <div class="overlay-stat"><div class="overlay-stat-num">918</div><div class="overlay-stat-label"><span data-en>Patient records</span><span data-es>Registros de pacientes</span></div></div>
+      <div class="overlay-stat"><div class="overlay-stat-num">3</div><div class="overlay-stat-label"><span data-en>Models built</span><span data-es>Modelos construidos</span></div></div>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title"><span data-en>Problem & approach</span><span data-es>Problema y enfoque</span></div>
+      <p class="overlay-text" style="margin-bottom:16px"><span data-en>Current diagnostic tools for heart disease are expensive, inaccessible, or lack specificity. The goal was to predict heart disease presence and classify into key subtypes: SCA, MI, Heart Failure, CAD.</span><span data-es>Las herramientas diagnósticas actuales para enfermedades cardíacas son costosas, inaccesibles o carecen de especificidad. El objetivo era predecir la presencia de enfermedad cardíaca y clasificarla en subtipos clave: SCA, IM, Insuficiencia Cardíaca, EAC.</span></p>
+      <ul class="overlay-list">
+        <li><strong><span data-en>Logistic Regression</span><span data-es>Regresión Logística</span></strong> — <span data-en>Binary classification, 88% accuracy</span><span data-es>Clasificación binaria, 88% de precisión</span></li>
+        <li><strong>SVM</strong> — <span data-en>Linear & RBF kernels, up to 86% accuracy</span><span data-es>Kernels lineal y RBF, hasta 86% de precisión</span></li>
+        <li><strong>K-Means Clustering</strong> — <span data-en>Unsupervised subtype discovery aligned with clinical patterns</span><span data-es>Descubrimiento no supervisado de subtipos alineado con patrones clínicos</span></li>
+        <li><span data-en>Key predictors: age, cholesterol, max heart rate, ST slope</span><span data-es>Predictores clave: edad, colesterol, frecuencia cardíaca máxima, pendiente ST</span></li>
+        <li><span data-en>3D PCA plots revealing cluster separation between disease subtypes</span><span data-es>Visualizaciones PCA 3D revelando separación de clusters entre subtipos de enfermedad</span></li>
+      </ul>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title">Stack</div>
+      <div class="overlay-tech">
+        <span class="accent">Python</span><span class="accent">scikit-learn</span><span class="accent">PCA</span>
+        <span>Logistic Regression</span><span>SVM</span><span>K-Means</span><span>Pandas</span><span>Matplotlib</span>
+      </div>
+    </div>
+    <a href="#" class="overlay-link-btn"><span data-en>View on GitHub</span><span data-es>Ver en GitHub</span> ↗</a>
+  </div>
+</div>
+
+<!-- World Cup -->
+<div class="overlay" id="overlay-worldcup">
+  <div class="overlay-nav">
+    <button class="overlay-back" onclick="closeOverlay('worldcup')">← <span data-en>Back</span><span data-es>Volver</span></button>
+    <span style="font-family:var(--font-mono);font-size:10px;color:var(--muted);letter-spacing:.1em">03 / 04</span>
+  </div>
+  <div class="overlay-body">
+    <div class="overlay-eyebrow">Sports Analytics · Data Science · 2022</div>
+    <div class="overlay-title"><span data-en>World Cup Prediction</span><span data-es>Predicción Mundial 2022</span></div>
+    <p class="overlay-desc"><span data-en>A structured, data-driven model answering one question: does the team with the best players actually win?</span><span data-es>Un modelo estructurado basado en datos que responde a una pregunta: ¿gana realmente el equipo con los mejores jugadores?</span></p>
+    <div class="overlay-meta">
+      <div class="overlay-meta-item"><div class="overlay-meta-label"><span data-en>Role</span><span data-es>Rol</span></div><div class="overlay-meta-val"><span data-en>Developer & Data Analyst</span><span data-es>Desarrolladora & Analista de Datos</span></div></div>
+      <div class="overlay-meta-item"><div class="overlay-meta-label"><span data-en>Data</span><span data-es>Datos</span></div><div class="overlay-meta-val">FIFA stats · 110 features · HTML scraping</div></div>
+    </div>
+    <div class="overlay-stats">
+      <div class="overlay-stat"><div class="overlay-stat-num">19K+</div><div class="overlay-stat-label"><span data-en>Player records</span><span data-es>Registros de jugadores</span></div></div>
+      <div class="overlay-stat"><div class="overlay-stat-num">32</div><div class="overlay-stat-label"><span data-en>Teams simulated</span><span data-es>Equipos simulados</span></div></div>
+      <div class="overlay-stat"><div class="overlay-stat-num">110</div><div class="overlay-stat-label"><span data-en>Features per player</span><span data-es>Características por jugador</span></div></div>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title"><span data-en>The model</span><span data-es>El modelo</span></div>
+      <ul class="overlay-list">
+        <li><span data-en>Position-weighted scoring: 70% position-specific attributes (finishing for forwards, tackling for defenders) + 30% general attributes (pace, physicality)</span><span data-es>Puntuación ponderada por posición: 70% atributos específicos (definición para delanteros, entrada para defensas) + 30% atributos generales (velocidad, físico)</span></li>
+        <li><span data-en>Position-by-position comparison for every match — not just total team score</span><span data-es>Comparación posición a posición en cada partido — no solo la puntuación total del equipo</span></li>
+        <li><span data-en>Cleaned 19,000+ player records: missing values, position mapping, weighted averages</span><span data-es>Limpieza de 19.000+ registros de jugadores: valores faltantes, mapeo de posiciones, medias ponderadas</span></li>
+        <li><span data-en>Scraped lineups for all 32 teams via BeautifulSoup HTML parsing</span><span data-es>Scraping de alineaciones de los 32 equipos mediante BeautifulSoup</span></li>
+        <li><span data-en>Simulated group stages, knockout rounds, and final programmatically — correctly forecast France to the final</span><span data-es>Simulación programática de fase de grupos, eliminatorias y final — predijo correctamente a Francia en la final</span></li>
+      </ul>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title">Stack</div>
+      <div class="overlay-tech">
+        <span class="accent">Python</span><span class="accent">Pandas</span><span class="accent">NumPy</span>
+        <span>BeautifulSoup</span><span>Matplotlib</span><span>Seaborn</span><span>JSON</span><span>Jupyter</span>
+      </div>
+    </div>
+    <a href="#" class="overlay-link-btn"><span data-en>View on GitHub</span><span data-es>Ver en GitHub</span> ↗</a>
+  </div>
+</div>
+
+<!-- World News Bias Analyzer -->
+<div class="overlay" id="overlay-newsbias">
+  <div class="overlay-nav">
+    <button class="overlay-back" onclick="closeOverlay('newsbias')">← <span data-en>Back</span><span data-es>Volver</span></button>
+    <span style="font-family:var(--font-mono);font-size:10px;color:var(--muted);letter-spacing:.1em">04 / 04</span>
+  </div>
+  <div class="overlay-body">
+    <div class="overlay-eyebrow"><span data-en>NLP · Geopolitical Intelligence · 2025</span><span data-es>PLN · Inteligencia Geopolítica · 2025</span></div>
+    <div class="overlay-title"><span data-en>World News Bias Analyzer</span><span data-es>Analizador de Sesgo en Noticias Globales</span></div>
+    <p class="overlay-desc"><span data-en>A live intelligence dashboard that tracks how the same world events are framed differently across 12 countries — fetching real articles, matching cross-country coverage via sentence embeddings, and scoring political bias with a trained classifier.</span><span data-es>Un dashboard de inteligencia en tiempo real que analiza cómo los mismos eventos mundiales se enmarcan de forma diferente en 12 países — capturando artículos reales, emparejando cobertura entre países mediante embeddings de frases y puntuando el sesgo político con un clasificador entrenado.</span></p>
+    <div class="overlay-meta">
+      <div class="overlay-meta-item"><div class="overlay-meta-label"><span data-en>Role</span><span data-es>Rol</span></div><div class="overlay-meta-val">Developer · Data Engineer · ML Engineer</div></div>
+      <div class="overlay-meta-item"><div class="overlay-meta-label"><span data-en>Data</span><span data-es>Datos</span></div><div class="overlay-meta-val">NewsData.io API · 12 countries · AllSides labels</div></div>
+      <div class="overlay-meta-item"><div class="overlay-meta-label">Stack</div><div class="overlay-meta-val">Python · sentence-transformers · scikit-learn · Plotly Dash</div></div>
+    </div>
+    <div class="overlay-stats">
+      <div class="overlay-stat"><div class="overlay-stat-num">122</div><div class="overlay-stat-label"><span data-en>Articles per fetch cycle</span><span data-es>Artículos por ciclo</span></div></div>
+      <div class="overlay-stat"><div class="overlay-stat-num">94%</div><div class="overlay-stat-label"><span data-en>Classifier accuracy</span><span data-es>Precisión del clasificador</span></div></div>
+      <div class="overlay-stat"><div class="overlay-stat-num">12</div><div class="overlay-stat-label"><span data-en>Countries tracked</span><span data-es>Países monitorizados</span></div></div>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title"><span data-en>1 — The problem: filter bubbles and algorithmic bias</span><span data-es>1 — El problema: burbujas de filtro y sesgo algorítmico</span></div>
+      <ul class="overlay-list">
+        <li><span data-en>Most people consume news filtered through a single national lens — algorithms optimise for engagement, not breadth. The result: the same geopolitical event gets radically different framings in Madrid, Washington, and Beijing.</span><span data-es>La mayoría de las personas consumen noticias a través de un único prisma nacional — los algoritmos optimizan el engagement, no la amplitud. El resultado: el mismo evento geopolítico recibe enfoques radicalmente distintos en Madrid, Washington o Pekín.</span></li>
+        <li><span data-en>The goal was to build a system that makes this invisible divergence visible — mapping political framing differences at scale, in real time, across 12 countries simultaneously.</span><span data-es>El objetivo era construir un sistema que hiciera visible esta divergencia invisible — mapeando diferencias de encuadre político a escala, en tiempo real, en 12 países simultáneamente.</span></li>
+      </ul>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title"><span data-en>2 — The data pipeline: NewsData.io + SQLite</span><span data-es>2 — El pipeline de datos: NewsData.io + SQLite</span></div>
+      <ul class="overlay-list">
+        <li><span data-en>Live article ingestion via the NewsData.io API — querying by country code across 12 nations per fetch cycle, yielding ~122 articles per run</span><span data-es>Ingesta de artículos en tiempo real mediante la API de NewsData.io — consultando por código de país en 12 naciones por ciclo, con ~122 artículos por ejecución</span></li>
+        <li><span data-en>SQLite database stores raw articles, computed embeddings, bias scores, and matched article clusters — designed for full reproducibility and incremental updates</span><span data-es>Base de datos SQLite que almacena artículos en bruto, embeddings calculados, puntuaciones de sesgo y clusters de artículos emparejados — diseñada para reproducibilidad total y actualizaciones incrementales</span></li>
+        <li><span data-en>Preprocessing pipeline: language normalisation, duplicate removal, entity extraction with spaCy, sentiment scoring with TextBlob</span><span data-es>Pipeline de preprocesamiento: normalización de idioma, eliminación de duplicados, extracción de entidades con spaCy, puntuación de sentimiento con TextBlob</span></li>
+      </ul>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title"><span data-en>3 — The ML layer: AllSides training data, feature engineering, logistic regression</span><span data-es>3 — La capa ML: datos AllSides, ingeniería de features, regresión logística</span></div>
+      <ul class="overlay-list">
+        <li><span data-en>Training data sourced from AllSides — a curated dataset of news sources with human-consensus political bias labels: Left / Lean-Left / Center / Lean-Right / Right</span><span data-es>Datos de entrenamiento de AllSides — un conjunto de fuentes de noticias con etiquetas de sesgo político consensuadas por humanos: Izquierda / Centroizquierda / Centro / Centroderecha / Derecha</span></li>
+        <li><span data-en>Feature engineering: TF-IDF on article text, sentiment polarity (TextBlob), entity density (spaCy NER), headline vs. body divergence score, source country encoding</span><span data-es>Ingeniería de features: TF-IDF sobre el texto, polaridad de sentimiento (TextBlob), densidad de entidades (spaCy NER), puntuación de divergencia titular/cuerpo, codificación de país de origen</span></li>
+        <li><span data-en>Logistic regression classifier with 5-class output — 94% accuracy on AllSides-labeled held-out test set, with calibrated confidence scores per label</span><span data-es>Clasificador de regresión logística con salida de 5 clases — 94% de precisión en el conjunto de test de AllSides, con puntuaciones de confianza calibradas por etiqueta</span></li>
+      </ul>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title"><span data-en>4 — The math: sentence embeddings, cosine similarity, union-find clustering</span><span data-es>4 — Las matemáticas: embeddings, similitud coseno, clustering union-find</span></div>
+      <ul class="overlay-list">
+        <li><span data-en>Article headlines and summaries are encoded using <strong>all-MiniLM-L6-v2</strong> (sentence-transformers) — a compact 384-dimensional embedding model optimised for semantic similarity</span><span data-es>Los titulares y resúmenes se codifican con <strong>all-MiniLM-L6-v2</strong> (sentence-transformers) — un modelo de embeddings de 384 dimensiones optimizado para similitud semántica</span></li>
+        <li><span data-en>Cross-country cosine similarity computed pairwise across all articles in a fetch cycle — pairs above a 0.75 threshold are considered same-event matches regardless of language or framing</span><span data-es>Similitud coseno entre países calculada por pares en todos los artículos de un ciclo — pares por encima del umbral 0.75 se consideran cobertura del mismo evento independientemente del idioma o enfoque</span></li>
+        <li><span data-en>Union-Find (disjoint sets) clusters matched pairs transitively — if A matches B and B matches C, all three are grouped as one event cluster, enabling multi-country framing comparison</span><span data-es>Union-Find (conjuntos disjuntos) agrupa transitivamente los pares emparejados — si A empareja con B y B con C, los tres se agrupan como un cluster de evento, permitiendo comparación multinacional de encuadres</span></li>
+        <li><span data-en>Framing divergence score per cluster: variance of bias label distributions across countries, surfaced on the interactive world map as a divergence heatmap</span><span data-es>Puntuación de divergencia de encuadre por cluster: varianza de distribuciones de etiquetas entre países, visualizada en el mapa mundial interactivo como mapa de calor de divergencia</span></li>
+      </ul>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title"><span data-en>5 — Results and what comes next</span><span data-es>5 — Resultados y próximos pasos</span></div>
+      <ul class="overlay-list">
+        <li><span data-en>Live dashboard at <strong>localhost:8050</strong> — interactive Plotly Dash interface with a world map heatmap, per-cluster article comparison panels, and bias distribution charts by country</span><span data-es>Dashboard en tiempo real en <strong>localhost:8050</strong> — interfaz Plotly Dash interactiva con mapa mundial de calor, paneles de comparación de artículos por cluster y gráficos de distribución de sesgo por país</span></li>
+        <li><span data-en>122 articles across 12 countries per fetch · 94% classifier accuracy · Bias labels with calibrated confidence scores across 5 classes</span><span data-es>122 artículos en 12 países por ciclo · 94% de precisión del clasificador · Etiquetas de sesgo con puntuaciones de confianza calibradas en 5 clases</span></li>
+        <li><span data-en>Next: expand to 30+ countries, integrate multilingual embeddings for non-English sources, add temporal tracking to visualise how framing shifts as a story evolves, and explore fine-tuning a transformer on the AllSides corpus</span><span data-es>Próximos pasos: ampliar a 30+ países, integrar embeddings multilingües para fuentes no anglófonas, añadir seguimiento temporal para visualizar cómo evoluciona el enfoque de una noticia, y explorar el fine-tuning de un transformer sobre el corpus AllSides</span></li>
+      </ul>
+    </div>
+    <div class="overlay-section">
+      <div class="overlay-section-title">Stack</div>
+      <div class="overlay-tech">
+        <span class="accent">Python</span><span class="accent">sentence-transformers</span><span class="accent">scikit-learn</span>
+        <span>NewsData.io API</span><span>SQLite</span><span>TextBlob</span><span>spaCy</span><span>Plotly Dash</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     DIPLOMA MODALS
+══════════════════════════════════════════════ -->
+
+<!-- Georgia Tech diploma -->
+<div class="diploma-modal" id="diploma-gt" onclick="if(event.target===this)closeDiploma('gt')">
+  <div class="diploma-modal-inner">
+    <button class="diploma-close" onclick="closeDiploma('gt')">✕</button>
+    <iframe src="diploma-gt.pdf" class="diploma-pdf" title="Georgia Tech Diploma"></iframe>
+    <div class="diploma-caption">Georgia Institute of Technology · B.S. Industrial &amp; Systems Engineering · 2025</div>
+  </div>
+</div>
+
+<!-- CEU diploma -->
+<div class="diploma-modal" id="diploma-ceu" onclick="if(event.target===this)closeDiploma('ceu')">
+  <div class="diploma-modal-inner">
+    <button class="diploma-close" onclick="closeDiploma('ceu')">✕</button>
+    <iframe src="diploma-ceu.pdf" class="diploma-pdf" title="CEU San Pablo Diploma"></iframe>
+    <div class="diploma-caption">CEU San Pablo Montepríncipe · Bachillerato Español en Ciencias · 2021</div>
+  </div>
+</div>
+
+<!-- Dual Diploma -->
+<div class="diploma-modal" id="diploma-dual" onclick="if(event.target===this)closeDiploma('dual')">
+  <div class="diploma-modal-inner">
+    <button class="diploma-close" onclick="closeDiploma('dual')">✕</button>
+    <iframe src="diploma-dual.pdf" class="diploma-pdf" title="Academica Dual Diploma"></iframe>
+    <div class="diploma-caption">Academica · U.S. High School Diploma · 2021</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
